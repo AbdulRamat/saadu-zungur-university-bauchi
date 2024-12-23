@@ -6,6 +6,48 @@ schoolfees
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .image-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            margin: 40px auto;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: inset(0 0 0 0);
+            animation: cycle-crop 10s infinite;
+        }
+
+        @keyframes cycle-crop {
+            0% {
+                clip-path: inset(0 0 0 0);
+            }
+            25% {
+                clip-path: inset(20% 0 0 0);
+            }
+            50% {
+                clip-path: inset(0 20% 0 0);
+            }
+            75% {
+                clip-path: inset(0 0 20% 0);
+            }
+            100% {
+                clip-path: inset(0 0 0 20%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="me.jpg" alt="student profile">
+    </div>
+   
+  <title>Student Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
